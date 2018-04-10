@@ -33,6 +33,8 @@ Rails.application.routes.draw do
 
   get "/places/:id", to: "places#show"
 
+  get "/tickets/most_expensives/:id", to: "tickets#most_expensives"
+
   resources :user do
     resources :tickets
   end

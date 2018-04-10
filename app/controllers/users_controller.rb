@@ -31,7 +31,6 @@ class UsersController < ApplicationController
     render json: @user
   end
 
-  def more_tickets_bought
   private
 
   def user_params

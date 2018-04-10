@@ -31,6 +31,11 @@ class TicketsController < ApplicationController
     render json: @ticket
   end
 
+  def most_expensives
+    @ticket = Ticket.all().order(:price).limit(1)
+    render json: @ticket
+  end
+
   private
 
   def ticket_params
